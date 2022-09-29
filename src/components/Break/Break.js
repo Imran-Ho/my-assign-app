@@ -2,7 +2,9 @@ import React, { useState } from 'react';
 import './Break.css'
 
 const Break = (props) => {
-    const {exercise} = props.time
+    console.log(props)
+    const {Time} = props.time
+    // console.log(exercise)
     const [second, setSecond]= useState("");
 
   
@@ -19,7 +21,7 @@ const Break = (props) => {
             </div>
             <div>
             <h5 className='my-3'>Exercise Details</h5>
-            <h5 className='shadow-lg p-3 mb-1 bg-body rounded'>Exercise time: {exercise}</h5>
+            <h5 className='shadow-lg p-3 mb-1 bg-body rounded'>Exercise time: {Time}s</h5>
             <h5 className='shadow-lg p-3 mb-5 bg-body rounded'>Break time: {second}</h5>
             <div className='d-grid col-12 mx-auto'>
             <button className='bg-primary border border-0 p-2 text-white'>Activity Completed</button>

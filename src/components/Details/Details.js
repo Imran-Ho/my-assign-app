@@ -70,9 +70,9 @@ const Details = () => {
       ];
       const [exercise, setExercise] = useState([])
 
-    const addToButton =(id)=>{
-        console.log('click')
-        setExercise(id)
+    const addToButton =(exerciseItem)=>{
+        // console.log(exerciseItem)
+        setExercise(exerciseItem)
     }
 
     return (
