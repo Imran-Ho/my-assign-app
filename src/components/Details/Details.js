@@ -78,13 +78,7 @@ const Details = () => {
       const [exercise, setExercise] = useState([])
 
     const addToButton =(exerciseItem)=>{
-        console.log(exerciseItem)
-        let min = 0;
-        for(const timesec in exerciseItem){
-          const seconds = timesec.Time
-          min = min + parseInt(timesec.Time)
-          console.log(typeof min)
-        }
+       
         setExercise(exerciseItem)
     }
 
