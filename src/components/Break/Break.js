@@ -4,10 +4,8 @@ import './Break.css'
 const Break = (props) => {
     console.log(props)
     const {Time} = props.time
-    // console.log(exercise)
     const [second, setSecond]= useState("");
 
-  
 
     return (
         <div>

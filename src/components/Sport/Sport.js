@@ -10,7 +10,7 @@ const Sport = (props) => {
                             <img className="card-img-top h-50" src={picture} alt="" />
                         <div className="card-body">
                         
-                            <h5 className="card-title">Name: {name}</h5>
+                            <h5 className="card-title">{name}</h5>
                             <p>Time: {Time}s</p>
                             
                         </div>

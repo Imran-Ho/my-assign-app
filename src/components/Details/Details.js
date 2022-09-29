@@ -1,9 +1,12 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faDumbbell } from '@fortawesome/free-solid-svg-icons';
 import { useState } from 'react';
 import Break from '../Break/Break';
 import Exercise from '../Exercise/Exercise';
 import Personal from '../Personal/Personal';
 import Sport from '../Sport/Sport';
 import './Details.css'
+
 
 const Details = () => {
     const games = [
@@ -68,6 +71,8 @@ const Details = () => {
           "name": "Gossip"
         }
       ];
+
+
       const [exercise, setExercise] = useState([])
 
     const addToButton =(exerciseItem)=>{
@@ -78,9 +83,12 @@ const Details = () => {
     return (
         <div className='row m-3'>
             <div className='col-8'>
-                <h2>Ultra-Active-Club</h2>
-                <h4 className='my-5'>Select today’s Sports</h4>
-               <div className="row row-cols-4 row-cols-md-3 g-4">
+                <div className='d-flex align-items-center '>
+                <FontAwesomeIcon className='me-2' icon={faDumbbell}></FontAwesomeIcon>
+                <h2>Ultra-Active-Center</h2>
+                </div>
+                <h4 className='my-5'>Select today’s Tasks</h4>
+               <div className="row row-cols-4 row-cols-md-3 row-cols-sm-1 g-4">
                 {
                     games.map(game => <Sport 
                         sport={game}
