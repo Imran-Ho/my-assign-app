@@ -4,10 +4,10 @@ const Sport = (props) => {
     console.log(props)
     const {name,Time,picture} = props.sport
     return (
-                <div className="row row-cols-4 row-cols-md-3 g-4">
+        <div >
                     <div className="col">
-                        <div className="card h-100">
-                            <img className="card-img-top" src={picture} alt="" />
+                        <div className="card h-100 w-100">
+                            <img className="card-img-top h-50" src={picture} alt="" />
                         <div className="card-body">
                         
                             <h5 className="card-title">Name: {name}</h5>
