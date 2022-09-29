@@ -5,13 +5,7 @@ import Swal from 'sweetalert2'
 // let count = 0;
 const Break = (props) => {
     const elements = props.time;
-    // let count = 0;
-    // for(const single of elements){
-    //     const {Time}= single
-    //     count = count + parseInt(Time)
-    // }
-    // console.log(typeof count)
-    // const {Time} = props.time
+    
     const [second, setSecond]= useState("");
 
     const sweetalert = () =>{

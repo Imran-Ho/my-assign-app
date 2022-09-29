@@ -81,9 +81,8 @@ const Details = () => {
         console.log(exerciseItem)
         let min = 0;
         for(const timesec in exerciseItem){
-          // const seconds = timesec.Time
-          // console.log(seconds)
-          min = min + timesec.Time
+          const seconds = timesec.Time
+          min = min + parseInt(timesec.Time)
           console.log(typeof min)
         }
         setExercise(exerciseItem)
