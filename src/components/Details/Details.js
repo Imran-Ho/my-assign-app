@@ -6,6 +6,7 @@ import Exercise from '../Exercise/Exercise';
 import Personal from '../Personal/Personal';
 import Sport from '../Sport/Sport';
 import './Details.css'
+import Blog from '../Blog/Blog';
 
 
 const Details = () => {
@@ -104,6 +105,7 @@ const Details = () => {
                 <Break time={exercise}></Break>
                 <Exercise></Exercise>
             </div>
+            <Blog></Blog>
         </div>
     );
 };
