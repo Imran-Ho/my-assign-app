@@ -8,7 +8,7 @@ const Personal = () => {
                     <img className='my-img' src={image} alt="" />
                     <h5 className='mx-3'>MD IMRAN HOSSAIN</h5>
                 </div>
-                <div className='d-flex shadow-lg p-2 my-3 bg-body rounded'>
+                <div className='d-flex d-sm-flex shadow-lg p-2 my-3 bg-body rounded'>
                     <div>
                         <h6 className='mx-3'>72kg</h6>
                         <h6 className='mx-3'>Weight</h6>

@@ -81,14 +81,14 @@ const Details = () => {
     }
 
     return (
-        <div className='row m-3'>
+        <div id='main-sec' className='row m-3'>
             <div className='col-8'>
                 <div className='d-flex align-items-center '>
                 <FontAwesomeIcon className='me-2' icon={faDumbbell}></FontAwesomeIcon>
                 <h2>Ultra-Active-Center</h2>
                 </div>
                 <h4 className='my-5'>Select today’s Tasks</h4>
-               <div className="row row-cols-4 row-cols-md-3 row-cols-sm-1 g-4">
+               <div id='cart' className="row row-cols-lg-3 g-4">
                 {
                     games.map(game => <Sport 
                         sport={game}
