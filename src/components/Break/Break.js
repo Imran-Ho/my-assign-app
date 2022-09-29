@@ -1,10 +1,18 @@
 import React, { useState } from 'react';
 import './Break.css'
-
+import Swal from 'sweetalert2'
 const Break = (props) => {
     console.log(props)
     const {Time} = props.time
     const [second, setSecond]= useState("");
+
+    const sweetalert = () =>{
+        Swal.fire(
+            'Good job!',
+            'You clicked the button!',
+            'success'
+          )
+    }
 
 
     return (
@@ -24,7 +32,7 @@ const Break = (props) => {
                 <h5 className='shadow-lg p-3 mb-5 bg-body rounded'>Break time: {second}</h5>
             </div>
             <div className='d-grid col-12 mx-auto w-100'>
-            <button className='bg-primary border border-0 p-2 text-white'>Activity Completed</button>
+            <button onClick={()=>sweetalert()} className='bg-primary border border-0 p-2 text-white'>Activity Completed</button>
             </div>
         </div>
         </div>
