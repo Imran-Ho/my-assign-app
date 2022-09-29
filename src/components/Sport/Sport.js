@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Sport = (props) => {
-    console.log(props)
+    // console.log(props)
     const {name,Time,picture} = props.sport
     return (
         <div >

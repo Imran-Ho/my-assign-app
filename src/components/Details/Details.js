@@ -9,6 +9,7 @@ import './Details.css'
 import Blog from '../Blog/Blog';
 
 
+
 const Details = () => {
     const games = [
         {
@@ -77,10 +78,10 @@ const Details = () => {
       const [exercise, setExercise] = useState([])
 
     const addToButton =(exerciseItem)=>{
-        // console.log(exerciseItem)
+        
         setExercise(exerciseItem)
     }
-
+    console.log(exercise)
     return (
         <div id='main-sec' className='row m-3'>
             <div className='col-8'>

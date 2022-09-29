@@ -2,8 +2,17 @@ import React, { useState } from 'react';
 import './Break.css'
 import Swal from 'sweetalert2'
 const Break = (props) => {
-    console.log(props)
-    const {Time} = props.time
+    const elements = props.time;
+    console.log(elements.Time)
+
+    let count = 0;
+    for(const element in elements){
+        console.log(typeof element.Time)
+        count = count + parseInt(element)
+        console.log(count)
+
+    }
+    // const {Time} = props.time
     const [second, setSecond]= useState("");
 
     const sweetalert = () =>{
@@ -28,7 +37,7 @@ const Break = (props) => {
             <div>
             <h5 className='my-3'>Exercise Details</h5>
             <div className=''>
-                <h5 className='shadow-lg p-3 mb-1 bg-body rounded'>Exercise time: {Time}s</h5>
+                <h5 className='shadow-lg p-3 mb-1 bg-body rounded'>Exercise time: {}s</h5>
                 <h5 className='shadow-lg p-3 mb-5 bg-body rounded'>Break time: {second}</h5>
             </div>
             <div className='d-grid col-12 mx-auto w-100'>
