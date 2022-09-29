@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import Break from '../Break/Break';
 import Exercise from '../Exercise/Exercise';
 import Personal from '../Personal/Personal';
@@ -67,6 +68,13 @@ const Details = () => {
           "name": "Gossip"
         }
       ];
+      const [exercise, setExercise] = useState([])
+
+    const addToButton =(id)=>{
+        console.log('click')
+        setExercise(id)
+    }
+
     return (
         <div className='row m-3'>
             <div className='col-8'>
@@ -77,6 +85,7 @@ const Details = () => {
                     games.map(game => <Sport 
                         sport={game}
                         key={game.index}
+                        func={addToButton}
                     ></Sport>)
                 }
                </div>
@@ -84,7 +93,7 @@ const Details = () => {
             </div>
             <div className='col-4'>
                 <Personal></Personal>
-                <Break></Break>
+                <Break time={exercise}></Break>
                 <Exercise></Exercise>
             </div>
         </div>

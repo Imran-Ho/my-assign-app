@@ -14,6 +14,9 @@ const Sport = (props) => {
                             <p>Time: {Time}s</p>
                             
                         </div>
+                        <div>
+                            <button onClick={()=>props.func()} className='bg-success border border-0 p-2 text-white w-100 rounded-bottom'>Add to list</button>
+                        </div>
                         </div>
                     </div>
                     </div>
